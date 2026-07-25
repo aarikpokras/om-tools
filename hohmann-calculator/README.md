@@ -6,9 +6,9 @@ The calculator outputs the phase angle (in this program solely based on orbital 
 ## Customization
 The hash box indicates the designated area for modification. It includes:
 
-|Name|Purpose|
-|---|---|
-|mu|Gravitational Parameter (GM)|
-|h0|Radius of the body being orbited|
-|h_chase|Height of the orbit of the chaser above the **surface**|
-|h_target|Height of the orbit of the target above the **surface**|
+|Name|Purpose|Unit|
+|---|---|---|
+|mu|Gravitational Parameter (GM)|m³ s⁻²|
+|h0|Radius of the body being orbited|m|
+|h_chase|Height of the orbit of the chaser above the **surface**|m|
+|h_target|Height of the orbit of the target above the **surface**|m|
