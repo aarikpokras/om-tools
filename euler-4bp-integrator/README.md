@@ -1,4 +1,8 @@
 # Euler-Cromer 4-body problem integrator
+
+> [!NOTE]
+> The Euler solver is no longer maintained. Use the Velocity Verlet one instead.
+
 Probably not what you're thinking of in that this doesn't calculate the bodies' influence on each other (yet).
 
 The next step for that would be letting the user define functions that govern the x and y movement of each of the bodies, which will almost definitely come before the sandbox-type "let-it-happen" approach, which will most definitely be very annoying to configure.
