@@ -59,29 +59,22 @@ modulo = until // 20
 
 print("In progress")
 
-### FORCE DEFS PRE LOOP ###
+def acceleration_vec(r_sc):
+  a = np.zeros(2) # Init the accel vector which will be repeatedly added to
 
-a_g_0 = -G * ( mass(0) * (r_sc - r_earth) ) / np.linalg.norm(r_earth - r_sc)**3
-a_g_1 = -G * ( mass(1) * (r_sc - r_sun) ) / np.linalg.norm(r_sun - r_sc)**3
-a_g_2 = -G * ( mass(2) * (r_sc - r_moon) ) / np.linalg.norm(r_moon - r_sc)**3
+  for r_body, wt in bds:
+    r12 = r_sc - r_body
+    a += -G * wt * r12 / np.linalg.norm(r12)**3
 
-###########################
-# Compute initial accel pre loop
-a = a_g_0 + a_g_1 + a_g_2
+  return a
+
+a = acceleration_vec(r_sc) # Pre-compute accel vector
 
 while _iter < until:
 
   r_sc += v*dt + 0.5*a*(dt**2)  # Compute new position based on accel
 
-  ### FORCE DEFS NEW POS ###
-
-  a_g_0 = -G * ( mass(0) * (r_sc - r_earth) ) / np.linalg.norm(r_earth - r_sc)**3
-  a_g_1 = -G * ( mass(1) * (r_sc - r_sun) ) / np.linalg.norm(r_sun - r_sc)**3
-  a_g_2 = -G * ( mass(2) * (r_sc - r_moon) ) / np.linalg.norm(r_moon - r_sc)**3
-
-  ##########################
-
-  a_new = a_g_0 + a_g_1 + a_g_2 # Compute accel at new position
+  a_new = acceleration_vec(r_sc)
   v += 0.5 * (a + a_new) * dt   # New vel for next loop, avg of a and a_new
                                 # vel production
   if (_iter % modulo == 0):
