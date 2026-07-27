@@ -12,5 +12,6 @@ There are a few user-defined configuration variables in the main script (all of 
 |`until`|frames|Define the amount of frames the simulation is to run.|
 |`r_*` (vector)|meters from origin|Defines position of Earth, Moon, Sun, and spacecraft initially|
 |`bds[*][1]`|kilograms|Defines the mass of each body|
+|`v`|meters per second|Defines starting velocity|
 
 <!-- MPL adjustables, like line color, start marker style, dots -->
