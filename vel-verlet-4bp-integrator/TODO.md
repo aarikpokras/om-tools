@@ -1,4 +1,4 @@
 - [x] Programmatically add bodies
 - [ ] Planetary motion defined by user-provided functions
 - [ ] Config file
-  - [ ] Instead - split sections of code into files?
+  - [ ] Instead - split sections of code into files, specify what users do in each?
