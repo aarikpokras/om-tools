@@ -9,7 +9,7 @@ import sys
 # The higher the value, the
 # less frequently terminal
 # outputs will be made.
-until = 500000
+until = 1000000
 
 """
 fp = Path("config")
@@ -35,11 +35,6 @@ r_sun = np.array([1.496e11, 700.0])
 r_sc = np.array([100000000.0, 5.0])
 
 ##############
-
-
-def mass(index):
-  return bds[index][1]
-
 
 ### ARRAY OF BODIES ###
 
