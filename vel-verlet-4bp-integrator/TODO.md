@@ -1,0 +1,3 @@
+- [x] Programmatically add bodies
+- [ ] Config file
+- [ ] Planetary motion defined by user-provided functions
