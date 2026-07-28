@@ -19,7 +19,7 @@ There are a few user-defined configuration variables in the main script (all of 
 <!-- MPL adjustables, like line color, start marker style, dots -->
 
 ## Add a body
-To add a body, add it to the `bdy` tuple array. The format is as follows:
+To add a body, add it to the `bds` tuple array. The format is as follows:
 ```python
 [ ... ( pos_vector_m, mass_kg ) ]
 ```
