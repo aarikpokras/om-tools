@@ -17,3 +17,39 @@ There are a few user-defined configuration variables in the main script (all of 
 |`dt`|seconds|Timestep|
 
 <!-- MPL adjustables, like line color, start marker style, dots -->
+
+## Add a body
+To add a body, add it to the `bdy` tuple array. The format is as follows:
+```python
+[ ... ( pos_vector_m, mass_kg ) ]
+```
+
+The position vectors are NumPy arrays, which can be added with something along the lines of:
+```python
+r_body = np.array([ pos_x_m, pos_y_m ])
+```
+
+A dot can be added to designate the position of the body in the Matplotlib visualization:
+```python
+### MPL BODY COLORS ###
+# ...
+
+ax.plot( [r_body[0]], [r_body[1]], '[color][shape]')
+
+# ...
+#######################
+```
+
+For `shape`, you can just use o. Additionally, you can use any shape usable in Matplotlib format strings.
+
+The placeholders for color and shape can be changed based on Matplotlib format strings. A quick reference for the colors:
+|Color|Code|
+|---|---|
+|Blue|b|
+|Green|g|
+|Red|r|
+|Cyan|c|
+|Magenta|m|
+|Yellow|y|
+|Black|k|
+|White|w|
