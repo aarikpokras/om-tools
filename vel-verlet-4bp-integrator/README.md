@@ -1,10 +1,10 @@
 # Velocity Verlet 4-body problem integrator
 
-Probably not what you're thinking of in that this doesn't calculate the bodies' influence on each other (yet).
+Might not be what you're thinking of in that this doesn't calculate the bodies' influence on each other.
 
-The next step for that would be letting the user define functions that govern the x and y movement of each of the bodies, which will almost definitely come before the sandbox-type "let-it-happen" approach, which will most definitely be very annoying to configure.
+The next step for this would be letting the user define functions that govern the x and y movement of each of the bodies.
 
-Currently, this assumes three, nonmoving bodies that are nailed in place (yes, only three; any more bodies that you might want will have to be manually added to the integration loop and array of bodies) and a spacecraft. I'm plan on making the capability for programmatically adding new bodies soon.
+In its form in this repository, this assumes three, nonmoving bodies that are nailed in place (tutorial for adding more bodies [below](#add-a-body)) and a spacecraft.
 
 There are a few user-defined configuration variables in the main script (all of which I hope to move out to a config file soon):
 
