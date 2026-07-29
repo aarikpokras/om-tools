@@ -1,7 +1,7 @@
 # Euler-Cromer 4-body problem integrator
 
 > [!NOTE]
-> The Euler solver is no longer maintained. Use the Velocity Verlet one instead.
+> The Euler solver is no longer maintained. Use the [Velocity Verlet](https://github.com/aarikpokras/om-tools/tree/master/vel-verlet-4bp-integrator) one instead.
 
 Probably not what you're thinking of in that this doesn't calculate the bodies' influence on each other (yet).
 
