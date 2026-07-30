@@ -1,5 +1,8 @@
 # Velocity Verlet 4-body problem integrator
 
+> [!NOTE]
+> Sorry, but this one also isn't maintained anymore! Go to the separate repo for [VLATI](https://github.com/aarikpokras/VLATI/) for the most up-to-date version of this.
+
 Might not be what you're thinking of in that this doesn't calculate the bodies' influence on each other.
 
 The next step for this would be letting the user define functions that govern the x and y movement of each of the bodies.
